@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "700580170706",
+    "project_id": "holoshop-189ca",
+    "storage_bucket": "holoshop-189ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700580170706:android:6c5f9d6e5bbe3067c9960b",
+        "android_client_info": {
+          "package_name": "com.example.holoshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMLbQAKJHddxZwWzdJmgdSRmR-KUsys6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

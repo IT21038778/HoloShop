@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HoloShop</string>
+    <string name="get_started">Get Started</string>
+    <string name="slogan">Discover,\nExperience,\nPurchase</string>
+    <string name="sloga2">All with the power of AR</string>
+    <string name="welcome">Welcome\nBack!</string>
+    <string name="username">Username or Email</string>
+    <string name="pass">Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="cont">- OR Continue with -</string>
+    <string name="create">Create an Account Sign Up now!</string>
+    <string name="createaccount">Create an\nAccount</string>
+    <string name="confirmpass">Confirm Password</string>
+    <string name="createBtn">Create Account</string>
+    <string name="alreadyhave">I Already Have an Account, Login Here</string>
+</resources>
