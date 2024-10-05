@@ -5,4 +5,5 @@
     <color name="LightBlue">#5190ED</color>
     <color name="DarkBlue">#1B5FC2</color>
     <color name="Grey">#808080</color>
+    <color name="bg">#f0fcff</color>
 </resources>

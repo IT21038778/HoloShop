@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp">
@@ -9,30 +8,36 @@
     <!-- Product Image -->
     <ImageView
         android:id="@+id/productImage"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
         android:scaleType="centerCrop"
         android:src="@drawable/sofa1" />
 
     <!-- Product Name -->
+
+    <!-- Product Price -->
+
     <TextView
         android:id="@+id/productName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Product Name"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/montserrat_bold"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:layout_marginTop="8dp"/>
+        android:text="Product Name"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
-    <!-- Product Price -->
     <TextView
         android:id="@+id/productPrice"
-        android:layout_width="wrap_content"
+        android:layout_width="121dp"
         android:layout_height="wrap_content"
-        android:text="Rs. 25,000"
+        android:layout_gravity="center"
         android:fontFamily="@font/montserrat_regular"
-        android:textColor="@color/white"
-        android:textSize="14sp"/>
+        android:gravity="center"
+        android:text="Rs. 25,000"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
 
 </LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".activities.ProductPage">
+
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="316dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="21dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/shoppingList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+
+    <TextView
+        android:id="@+id/tvProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="107dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Rs. 0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buynowBtn"
+        app:layout_constraintStart_toStartOf="@+id/shoppingList"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingList" />
+
+    <TextView
+        android:id="@+id/shoppingList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Product Name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvProductPrice"
+        app:layout_constraintStart_toStartOf="@+id/ivProductImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivProductImage" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="66dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivProductImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/botnav"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector_botnav"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arBtn"
+        app:menu="@menu/bottom_menu" />
+
+    <Button
+        android:id="@+id/cartBtn"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/light_blue_btn"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/cartBtn"
+        app:backgroundTint="@color/LightBlue"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buynowBtn"
+        app:layout_constraintEnd_toStartOf="@+id/buynowBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buynowBtn"
+        android:layout_width="144dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/light_blue_btn"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/buynowBtn"
+        app:backgroundTint="@color/LightBlue"
+        app:layout_constraintBottom_toTopOf="@+id/arBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cartBtn"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductPrice" />
+
+    <Button
+        android:id="@+id/arBtn"
+        android:layout_width="185dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/light_blue_btn"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/arBtn"
+        app:backgroundTint="@color/LightBlue"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+        app:layout_constraintEnd_toStartOf="@+id/buynowBtn"
+        app:layout_constraintStart_toStartOf="@+id/cartBtn"
+        app:layout_constraintTop_toBottomOf="@+id/buynowBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

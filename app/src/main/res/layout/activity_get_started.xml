@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:scaleX="1"
     android:scaleY="1"
-    tools:context=".get_started">
+    tools:context=".activities.get_started">
 
     <ImageView
         android:id="@+id/imageView2"

@@ -1,5 +1,14 @@
 [versions]
-agp = "8.5.1"
+agp = "8.7.0"
+compiler = "4.15.1"
+core = "1.45.0"
+filamentAndroid = "1.52.0"
+filamentUtils = "1.22.0"
+firebaseAuth = "23.0.0"
+firebaseBom = "33.4.0"
+glide = "4.15.1"
+gltfast = "1.17.0"
+googleCore = "1.36.0"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -9,9 +18,32 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
+assets = "1.17.1"
+playServices = "12.0.1"
+rajawali = "1.1.777"
+coreVersion = "1.17.1"
+sceneview = "1.0.0"
+sceneviewAndroid = "1.0.0"
+sceneviewVersion = "2.2.1"
+common = "18.11.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+core = { module = "com.google.ar:core", version.ref = "core" }
+core-v1360 = { module = "com.google.ar:core", version.ref = "googleCore" }
+filament-android = { module = "com.google.android.filament:filament-android", version.ref = "filamentAndroid" }
+filament-utils = { module = "com.google.android.filament:filament-utils", version.ref = "filamentUtils" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-database = { module = "com.google.firebase:firebase-database" }
+firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
+firebase-storage = { module = "com.google.firebase:firebase-storage" }
+github-sceneview = { module = "io.github.sceneview:sceneview", version.ref = "sceneviewVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gltfast = { module = "com.google.android.filament:gltfast", version.ref = "gltfast" }
+gltfio = { module = "com.google.android.filament:gltfio", version.ref = "filamentUtils" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -19,6 +51,11 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+play-services = { module = "com.google.android.gms:play-services", version.ref = "playServices" }
+rajawali = { module = "org.rajawali3d:rajawali", version.ref = "rajawali" }
+sceneview = { module = "com.google.ar.sceneview:sceneview", version.ref = "sceneview" }
+sceneview-android = { module = "com.github.SceneView:sceneview-android", version.ref = "sceneviewAndroid" }
+common = { group = "com.google.mlkit", name = "common", version.ref = "common" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

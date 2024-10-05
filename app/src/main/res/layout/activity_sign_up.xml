@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sign_in">
+    tools:context=".activities.sign_in">
 
     <TextView
         android:id="@+id/createaccount"
@@ -14,8 +14,12 @@
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/createaccount"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.489" />
 
     <EditText
         android:id="@+id/pass"
@@ -26,8 +30,12 @@
         android:hint="@string/pass"
         android:inputType="textPassword"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="227dp" />
+        app:layout_constraintBottom_toTopOf="@+id/confirmpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
 
     <EditText
         android:id="@+id/confirmpass"
@@ -38,16 +46,12 @@
         android:hint="@string/confirmpass"
         android:inputType="textPassword"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="290dp" />
-
-    <ImageView
-        android:id="@+id/fb"
-        android:layout_width="64dp"
-        android:layout_height="61dp"
-        app:srcCompat="@drawable/fb"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="542dp" />
+        app:layout_constraintBottom_toTopOf="@+id/createBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
 
     <Button
         android:id="@+id/createBtn"
@@ -58,27 +62,12 @@
         android:text="@string/createBtn"
         android:textSize="17dp"
         app:backgroundTint="@color/LightBlue"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="391dp" />
-
-    <TextView
-        android:id="@+id/cont"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_regular"
-        android:text="@string/cont"
-        android:textColor="@color/Grey"
-        android:textSize="13dp"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="501dp" />
-
-    <ImageView
-        android:id="@+id/google"
-        android:layout_width="64dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/google"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="544dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628" />
 
     <TextView
         android:id="@+id/alreadyhave"
@@ -88,8 +77,28 @@
         android:text="@string/alreadyhave"
         android:textColor="@color/LightBlue"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="628dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createBtn"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Enter your Email"
+        android:inputType="text"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928" />
 
     <EditText
         android:id="@+id/username"
@@ -97,10 +106,14 @@
         android:layout_height="45dp"
         android:ems="10"
         android:fontFamily="@font/montserrat_regular"
-        android:hint="@string/username"
+        android:hint="Enter your Username"
         android:inputType="text"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="165dp" />
+        app:layout_constraintBottom_toTopOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
